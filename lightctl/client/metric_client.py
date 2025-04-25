@@ -35,7 +35,7 @@ class MetricClient(BaseClient):
     def metrics_preview_url(self, workspace_id: str) -> str:
         """
         Returns:
-           str: The metrics endpoint, used for getting and modifying metrics
+           str: The metrics preview endpoint, used for previewing metrics
         """
         return urllib.parse.urljoin(
             self.url_base, f"/api/{API_VERSION}/ws/{workspace_id}/metrics/preview"
