@@ -48,7 +48,6 @@ def refresh_token_if_needed(func):
 class BaseClient:
     def __init__(self):
         if LIGHTUP_URL_BASE is not None or  LIGHTUP_REFRESH_TOKEN is not None:
-            # raise ValueError("refresh_token or url_base not found")
             self.url_base = LIGHTUP_URL_BASE
             self.refresh_token = LIGHTUP_REFRESH_TOKEN
         else:
